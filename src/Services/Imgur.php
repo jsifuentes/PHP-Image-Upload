@@ -31,7 +31,7 @@ class Imgur extends ImageService
 			'title' => $title,
 			'description' => $description
 		), array(
-			'Authorization' => 'Client-ID: ' . $this->key
+			'Authorization: Client-ID: ' . $this->key
 		));
 	}
 }
