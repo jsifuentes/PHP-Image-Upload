@@ -1,0 +1,12 @@
+{
+    "name": "jsifuentes/php-image-upload",
+    "description": "Easily upload images to third-party services",
+    "keywords": ["images", "imgur", "imageshack"],
+    "license": "MIT",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "ImageUpload\\": "src/"
+        }
+    }
+}
