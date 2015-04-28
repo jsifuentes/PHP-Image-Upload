@@ -1,7 +1,7 @@
 <?php
 namespace Services;
 
-use \ImageService as ImageService;
+use \ImageUpload\ImageService as ImageService;
 
 class ImageShack extends ImageService
 {
