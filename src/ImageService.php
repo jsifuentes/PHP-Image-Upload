@@ -1,4 +1,5 @@
 <?php
+namespace ImageUpload;
 
 class ImageService
 {

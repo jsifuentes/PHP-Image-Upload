@@ -1,5 +1,5 @@
 <?php
-namespace Services;
+namespace ImageUpload\Services;
 
 use \ImageUpload\ImageService as ImageService;
 
