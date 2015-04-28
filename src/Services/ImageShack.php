@@ -42,7 +42,7 @@ class ImageShack extends ImageService
 	}
 
 	/**
-	 * Upload an image to Imgur
+	 * Upload an image to Imageshack
 	 *
 	 * @param string File you will be uploading (URL, Base64)
 	 * @param string Description of image
