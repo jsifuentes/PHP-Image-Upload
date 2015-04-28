@@ -11,18 +11,18 @@ use ImageUpload\Services\ImageShack as ImageShack;
 // Imgur - uploading with a url, full path, or base64 string
 $imgur = new Imgur('API Key');
 $imgur->upload('http://website.com/image.png');
-$imgur->upload(__DIR__ . '/image.png');
+$imgur->upload(file_get_contents(__DIR__ . '/image.png'));
 $imgur->upload('SGFoYWhhIHRoaXMgaXMgZHVtbXkgZGF ... 0YSBmb3IgbXkgcmVwb3NpdG9yeQ==');
 
 // Imageshack - uploading an image or video
 $imageshack = new ImageShack('API Key');
 $imageshack->upload('http://website.com/image.png');
-$imageshack->upload(__DIR__ . '/image.png');
-$imageshack->uploadVideo(__DIR__ . '/video.mp4');
+$imageshack->upload(file_get_contents(__DIR__ . '/image.png'));
+$imageshack->uploadVideo(file_get_contents(__DIR__ . '/video.mp4'));
 
 // Uploading an image or video with an account
-$imageshack->withCredentials('username', 'password')->upload(__DIR__ . '/image.png');
-$imageshack->withCookie('cookie key')->upload(__DIR__ . '/image.png');
+$imageshack->withCredentials('username', 'password')->upload(file_get_contents(__DIR__ . '/image.png'));
+$imageshack->withCookie('cookie key')->upload(file_get_contents(__DIR__ . '/image.png'));
 
 
 ```
